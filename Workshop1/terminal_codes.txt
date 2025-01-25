@@ -47,3 +47,5 @@ so to make it easier we make a file named "Makefile" and include above "nasm -f 
 "ld -o exex.x obj.o" command in above file 
 then when changes do in the above .asm file we coud easily run "make" command in the terminal and recreate the exex.x file]
 after that it can be run by ./exe.x
+
+Makefile is in the directory

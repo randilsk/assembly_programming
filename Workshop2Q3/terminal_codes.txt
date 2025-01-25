@@ -1,0 +1,1 @@
+with ctrl + D -> excute the program in next line if pressed enter it will go to line after next line
