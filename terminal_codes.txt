@@ -1,0 +1,49 @@
+nasm -f win64 -o obj.o -l list.l a01.asm
+
+Explanation of the Command
+nasm:
+
+This is the Netwide Assembler (NASM), a popular assembler for x86 architecture, which converts assembly code into machine code.
+-f win64:
+
+The -f flag specifies the output format for the object file.
+win64 tells NASM to generate an object file in the 64-bit Windows format. If you were targeting Linux, you might use elf64 instead of win64.
+-o obj.o:
+
+The -o flag specifies the name of the output file.
+In this case, the object file will be named obj.o. This file contains machine code generated from your assembly code but isn't a complete executable yet—it needs to be linked into a final executable.
+-l list.l:
+
+The -l flag tells NASM to create a listing file, which is a text file that provides detailed information about the assembly process.
+The file list.l will contain information such as the line-by-line assembly code and its corresponding machine code. This is useful for debugging and analysis.
+a01.asm:
+
+This is the input assembly file that you want to assemble. NASM will read the code in a01.asm and convert it into machine code.
+Summary of What Happens
+The NASM command takes the assembly source file a01.asm.
+It assembles the code into a 64-bit Windows object file (obj.o).
+It also generates a listing file (list.l) that shows detailed assembly and machine code information.
+After this, you will typically need to link the object file (obj.o) to create an executable.
+
+
+after the above command we can use gedit command to open the fils
+
+after that an executable file can be created usin below command
+
+ld -o exe.x obj.o
+
+an exe.x excutable file is created from obj.o file
+
+it can be directly excuted from the terminal using below command
+
+./exe.x 
+
+./ meaning in the same directory where the file stays
+
+
+so in the above context if we do any changes in .asm file it wont automatically change the list.l and obj.o files
+so we hve to again enter above commands and recreate obj. o and list.l but it takes time
+so to make it easier we make a file named "Makefile" and include above "nasm -f win64 -0 obj.0 -l list.l " and 
+"ld -o exex.x obj.o" command in above file 
+then when changes do in the above .asm file we coud easily run "make" command in the terminal and recreate the exex.x file]
+after that it can be run by ./exe.x
