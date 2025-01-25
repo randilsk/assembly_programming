@@ -1,0 +1,17 @@
+with ctrl + D -> excute the program in next line if pressed enter it will go to line after next line;a program execute sequentially from top to bottom. EIP(instruction pointer) contains the address of the next
+;instruction to be excuted
+;program excution flow is know as control flow.
+;
+
+;Conditional jumps:
+;if(k==9)        do this else do that
+;cmp rax,rbx     comparison operator - compare value of rax with rbx
+;je label2       jump to the given addrss if and only if prev statement gives equal
+
+; if rax and rbx are eqaul then the jmp will happen if not it will omit that instruction and proceed
+;values also can be used in abve cmp rax,2 etc.....
+;jl  -- jump if less than
+;jle -- jump if less than or equal
+;jg  -- jump if greater than
+;jge -- jump if greater than or equal
+;jne -- jump if not equal
