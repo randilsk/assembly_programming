@@ -37,9 +37,6 @@ loop:
 
 
 
-; here we use another register other than ggenerl 4 register to keep count of the loop and use cmp to compare it and subrutine for looping
-; here a initial value is stored in the rsi register and untill the value exceed it is incremented and compared and print hello
-
 	
 	
 

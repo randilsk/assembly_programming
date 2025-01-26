@@ -1,6 +1,1 @@
-
-	; in a subtrotine a jump is occured(control flow alter to another instruction) but in a necessrilly comes bac (returns) to the same instruction
-	;subroutine shoud be called for that use "call" 
-	; at the end of subroutine "ret" (return) must be there to come bck to original instruction
-	;lable storse address of an instruction
-	
+; analgous to functions in highlevel programming but without arguments
